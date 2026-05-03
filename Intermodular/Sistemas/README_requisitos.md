@@ -178,4 +178,41 @@ String PASS = "";
 | SO usuario | Windows 10 / 11 (64 bits) |
 | SO servidor BD | Windows 10/11 o Ubuntu Server 22.04 LTS |
 
+## 6.Usuarios, permisos y estructura 
 
+Existen dos tipos de usuarios que tienen acceso. 
+1. Los administradores son los que tienen todos los permisos y los que pueden añadir a los usuarios nuevos y darles
+los roles.
+2. Los trabajadores tienen permiso para registrar su jornada, pedir las vacaciones y ver su historial.
+
+Los datos se guardan en la BBDD conectada a través de JDBC como se explicó anteriormente.
+
+## 7.  Mantenimiento
+
+Se deberían de actualizar las dependencias a medida que salgan actualizaciones de los recursos que hemos utilizado (JDK, XAMPP,etc.)
+
+Tener en cuenta que hay que actualizar el propio SO cuando sea pertinente.
+
+Por seguridad, es recomendable cambiar las contraseñas cada cierto tiempo y cambiar la contraseña del usuario de la aplicación en MySQL y actualizar la cadena de conexión en el código
+
+### Qué revisar periódicamente
+
+**Semanal:**
+- Comprobar que el servicio MySQL de XAMPP arranca correctamente.
+- Comprobar que los backups funcionan correctamente.
+
+**Mensual:**
+- Revisar el espacio en disco del servidor: la base de datos no debería superar el 70% del almacenamiento disponible.
+- Comprobar que las copias de seguridad de la BD se están generando correctamente (ver sección de backups abajo).
+- Revisar los registros de fichajes huérfanos o inconsistentes (entradas sin salida con más de 24 horas).
+
+**Trimestral:**
+- Revisar los usuarios dados de alta en la aplicación y desactivar los que ya no estén en la empresa (`fechaBaja`).
+- Comprobar que los permisos del usuario de base de datos no han sido modificados.
+
+### Qué hacer si falla
+
+Revisar que no se ha excedido la capacidad de memoria, que los datos introducidos y las conexiones
+están correctamente.
+
+Ponerse en contacto con el equipo técnico.
