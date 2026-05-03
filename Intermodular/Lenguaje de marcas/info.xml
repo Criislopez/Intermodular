@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sistemaFichajes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="esquema.xsd"
+                 exportadoEn="2025-05-03T10:00:00">
+
+  <!-- ============================= USUARIOS ============================= -->
+  <usuarios>
+
+    <usuario id="1">
+      <nombre>Carlos</nombre>
+      <apellidos>Martínez López</apellidos>
+      <dni>12345678A</dni>
+      <telefono>612345678</telefono>
+      <email>carlos.martinez@empresa.com</email>
+      <rol>ADMIN</rol>
+      <fechaAlta>2020-01-15</fechaAlta>
+      <tipoJornada>COMPLETA</tipoJornada>
+      <horasSemanales>40</horasSemanales>
+    </usuario>
+
+    <usuario id="2">
+      <nombre>Laura</nombre>
+      <apellidos>Gómez Ruiz</apellidos>
+      <dni>23456789B</dni>
+      <telefono>623456789</telefono>
+      <email>laura.gomez@empresa.com</email>
+      <rol>EMPLEADO</rol>
+      <fechaAlta>2021-03-01</fechaAlta>
+      <tipoJornada>COMPLETA</tipoJornada>
+      <horasSemanales>40</horasSemanales>
+    </usuario>
+
+    <usuario id="3">
+      <nombre>Sergio</nombre>
+      <apellidos>Fernández Castro</apellidos>
+      <dni>34567890C</dni>
+      <telefono>634567890</telefono>
+      <email>sergio.fernandez@empresa.com</email>
+      <rol>EMPLEADO</rol>
+      <fechaAlta>2022-06-20</fechaAlta>
+      <tipoJornada>PARCIAL</tipoJornada>
+      <horasSemanales>20</horasSemanales>
+    </usuario>
+
+    <usuario id="4">
+      <nombre>Ana</nombre>
+      <apellidos>Torres Blanco</apellidos>
+      <dni>45678901D</dni>
+      <telefono>645678901</telefono>
+      <email>ana.torres@empresa.com</email>
+      <rol>EMPLEADO</rol>
+      <fechaAlta>2023-01-10</fechaAlta>
+      <fechaBaja>2024-12-31</fechaBaja>
+      <tipoJornada>COMPLETA</tipoJornada>
+      <horasSemanales>40</horasSemanales>
+    </usuario>
+
+  </usuarios>
+
+  <!-- ============================= FICHAJES ============================= -->
+  <fichajes>
+
+    <fichaje id="1" idUsuario="2">
+      <fechaFichaje>2025-04-28</fechaFichaje>
+      <horaEntrada>08:02:00</horaEntrada>
+      <horaSalida>17:05:00</horaSalida>
+      <estado>COMPLETADO</estado>
+    </fichaje>
+
+    <fichaje id="2" idUsuario="2">
+      <fechaFichaje>2025-04-29</fechaFichaje>
+      <horaEntrada>08:00:00</horaEntrada>
+      <horaSalida>17:00:00</horaSalida>
+      <estado>COMPLETADO</estado>
+    </fichaje>
+
+    <fichaje id="3" idUsuario="3">
+      <fechaFichaje>2025-04-28</fechaFichaje>
+      <horaEntrada>09:15:00</horaEntrada>
+      <estado>PENDIENTE</estado>
+    </fichaje>
+
+    <fichaje id="4" idUsuario="1">
+      <fechaFichaje>2025-04-28</fechaFichaje>
+      <horaEntrada>07:55:00</horaEntrada>
+      <horaSalida>16:58:00</horaSalida>
+      <estado>COMPLETADO</estado>
+    </fichaje>
+
+    <fichaje id="5" idUsuario="3">
+      <fechaFichaje>2025-04-30</fechaFichaje>
+      <horaEntrada>10:00:00</horaEntrada>
+      <horaSalida>14:00:00</horaSalida>
+      <estado>COMPLETADO</estado>
+    </fichaje>
+
+  </fichajes>
+
+  <!-- ============================= VACACIONES ============================= -->
+  <vacaciones>
+
+    <solicitudVacaciones id="1" idUsuario="2">
+      <fechaInicio>2025-07-01</fechaInicio>
+      <fechaFin>2025-07-15</fechaFin>
+      <diasDisponibles>22</diasDisponibles>
+      <diasSolicitados>11</diasSolicitados>
+      <estado>APROBADA</estado>
+    </solicitudVacaciones>
+
+    <solicitudVacaciones id="2" idUsuario="3">
+      <fechaInicio>2025-08-01</fechaInicio>
+      <fechaFin>2025-08-10</fechaFin>
+      <diasDisponibles>15</diasDisponibles>
+      <diasSolicitados>7</diasSolicitados>
+      <estado>PENDIENTE</estado>
+    </solicitudVacaciones>
+
+    <solicitudVacaciones id="3" idUsuario="1">
+      <fechaInicio>2025-06-16</fechaInicio>
+      <fechaFin>2025-06-27</fechaFin>
+      <diasDisponibles>22</diasDisponibles>
+      <diasSolicitados>10</diasSolicitados>
+      <estado>APROBADA</estado>
+    </solicitudVacaciones>
+
+  </vacaciones>
+
+  <!-- ============================= PROYECTOS ============================= -->
+  <proyectos>
+
+    <proyecto id="1" idResponsable="1">
+      <nombre>Portal de Clientes</nombre>
+      <descripcion>Desarrollo de un portal web para la gestión de clientes de la empresa.</descripcion>
+      <fechaInicio>2025-01-10</fechaInicio>
+      <fechaFin>2025-06-30</fechaFin>
+      <cliente>Inversiones del Norte S.L.</cliente>
+      <localizacion>Madrid</localizacion>
+      <miembros>
+        <miembro idUsuario="1"/>
+        <miembro idUsuario="2"/>
+        <miembro idUsuario="3"/>
+      </miembros>
+    </proyecto>
+
+    <proyecto id="2" idResponsable="2">
+      <nombre>App Mobile Inventario</nombre>
+      <descripcion>Aplicación móvil para el control de inventario en almacenes.</descripcion>
+      <fechaInicio>2025-03-01</fechaInicio>
+      <cliente>Logística Express S.A.</cliente>
+      <localizacion>Barcelona</localizacion>
+      <miembros>
+        <miembro idUsuario="2"/>
+        <miembro idUsuario="3"/>
+      </miembros>
+    </proyecto>
+
+    <proyecto id="3" idResponsable="1">
+      <nombre>Sistema de Fichajes Interno</nombre>
+      <descripcion>Plataforma interna para el registro de jornada y gestión de RRHH.</descripcion>
+      <fechaInicio>2024-09-01</fechaInicio>
+      <fechaFin>2025-02-28</fechaFin>
+      <cliente>Interno</cliente>
+      <localizacion>Madrid</localizacion>
+      <miembros>
+        <miembro idUsuario="1"/>
+        <miembro idUsuario="2"/>
+      </miembros>
+    </proyecto>
+
+  </proyectos>
+
+</sistemaFichajes>
