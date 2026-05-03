@@ -1,0 +1,2 @@
+Nombre: admin admin | Correo: admin@admin.com | DNI: 3345535B | Fecha: 2026-05-03 | Entrada: 19:38:10 | Salida prevista: 03:38:10
+Nombre: admin admin | Correo: admin@admin.com | DNI: 3345535B | Fecha: 2026-05-03 | Entrada: 19:38:12 | Salida prevista: 03:38:12

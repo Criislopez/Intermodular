@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.appfichaje.controller.LoginController">
+    <top>
+        <Text fill="#404040" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" BorderPane.alignment="BOTTOM_CENTER">
+            <BorderPane.margin>
+                <Insets top="100.0" />
+            </BorderPane.margin>
+            <font>
+                <Font name="Bebas Neue Regular" size="48.0" />
+            </font>
+        </Text>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" prefHeight="434.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#6f6f6f" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa tus credenciales para acceder.">
+                    <VBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="txtUser" alignment="CENTER" maxWidth="300.0" prefWidth="300.0" promptText="Usuario">
+                    <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="50.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <TextField fx:id="txtPass" alignment="CENTER" layoutX="60.0" layoutY="46.0" maxWidth="300.0" prefWidth="300.0" promptText="Contraseña">
+                    <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="30.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+            <Text fx:id="txtErrorCredenciales" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+                <Button fx:id="btnAcceder" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Acceder" textFill="WHITE">
+                    <padding>
+                        <Insets bottom="8.0" left="30.0" right="30.0" top="8.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Bebas Neue Regular" size="18.0" />
+               </font>
+                </Button>
+            </children>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin></VBox>
+    </center>
+</BorderPane>

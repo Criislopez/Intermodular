@@ -1,0 +1,46 @@
+.panelFondo {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-background-radius: 12px;
+}
+#btnRegistrarJornada, #btnAgregarUsuario, #btnAcceder, #btnModificarUsuario {
+
+    -fx-background-color: linear-gradient(to top, rgba(0, 95, 184, 1) 0.0, rgba(26, 115, 232, 1) 0.50);
+    -fx-text-fill:#fff;
+}
+
+#btnVerHistorial, #btnSolicitarVacaciones {
+    -fx-background-color:linear-gradient(to top, rgba(215, 218, 224, 1) 0.0, rgba(229, 232, 238, 1) 0.35);
+}
+
+#panelCentral, #panelGeneral, #escenaPerfil, #btnEditar {
+    -fx-background-color: #f1f5f9;
+}
+#panelIzq {
+    -fx-background-color: #dfe6ef;
+}
+
+.btnMenuLateral {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.btnMenuLateral:hover {
+    -fx-background-color: #f1f4fa;
+    -fx-text-fill: #1a73e8;
+    -fx-font-weight:bold;
+
+}
+
+.btnMenuLateral:hover > FontAwesomeIconView {
+    -fx-fill: #1a73e8;
+}
+
+#panelHoras {
+    -fx-background-color: #1a73e8;
+}
+
+#panelVacaciones{
+    -fx-background-color: #86f898;
+}

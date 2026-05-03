@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="panelGeneral" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="150.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.appfichaje.controller.SidebarController">
+    <left>
+        <AnchorPane fx:id="panelIzq" prefHeight="700.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" layoutY="135.0" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="150.0">
+                    <children>
+                        <Button fx:id="brnInicio" alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="btnMenuLateral" text="Inicio" textFill="#252525">
+                            <graphic>
+                                <FontAwesomeIconView fill="#252525" glyphName="HOME" size="20" text="" translateX="-10.0" />
+                            </graphic>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnPerfil" maxWidth="1.7976931348623157E308" styleClass="btnMenuLateral" text="Perfil" textFill="#404040">
+                            <graphic>
+                                <FontAwesomeIconView fill="#252525" glyphName="USER_CIRCLE_ALT" size="20" text="" translateX="-10.0" />
+                            </graphic>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" layoutY="500.0" prefHeight="200.0" prefWidth="150.0">
+                    <children>
+                        <Button fx:id="btnEquipo" alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="btnMenuLateral" text="Equipo" textFill="#404040">
+                            <graphic>
+                                <FontAwesomeIconView fill="#252525" glyphName="USERS" size="20" text="" textAlignment="CENTER" translateX="-10.0" />
+                            </graphic>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Button>
+                        <Button fx:id="btnSalir" maxWidth="1.7976931348623157E308" styleClass="btnMenuLateral" text="Salir" textFill="#404040">
+                            <graphic>
+                                <FontAwesomeIconView fill="#252525" glyphName="SIGN_OUT" size="20" text="" translateX="-10.0" />
+                            </graphic>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
